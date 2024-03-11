@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchorpaneChanges" layoutY="6.0" prefHeight="585.0" prefWidth="730.0">
+         <children>
+            <ImageView fitHeight="412.0" fitWidth="554.0" layoutX="125.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngimg.com%20-%20volkswagen_PNG1820.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="388.0" layoutY="511.0" prefHeight="24.0" prefWidth="261.0" text=" CAR-RENT COMPANY">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="548.0" layoutY="541.0" prefHeight="17.0" prefWidth="141.0" text="You Ride, You Way.">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

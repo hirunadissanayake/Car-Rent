@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.GetCarDetailsController">
+   <children>
+      <Label layoutY="1.0" prefHeight="24.0" prefWidth="203.0" text="Car Details" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCarCategory" layoutX="141.0" layoutY="37.0" onAction="#cmbCarCategoryOnAction" prefHeight="25.0" prefWidth="176.0" promptText="Select Car Category">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField fx:id="txtCarCategoryId" layoutX="497.0" layoutY="37.0" promptText="Car Category Id" />
+      <ComboBox fx:id="cmbCarModel" layoutX="141.0" layoutY="84.0" onAction="#cmbCarBrandOnAction" prefHeight="25.0" prefWidth="176.0" promptText="Select Car Brand">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="cmbCarModel1" layoutX="497.0" layoutY="84.0" onAction="#cmbCarModelOnAction" prefHeight="25.0" prefWidth="176.0" promptText="Select Car Model">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="14.0" layoutY="41.0" prefHeight="19.0" prefWidth="127.0" text="Silect Car Category ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="87.0" prefHeight="17.0" prefWidth="119.0" text="Silect Car Model">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="87.0" prefHeight="17.0" prefWidth="119.0" text="Silect Car Brand    ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCar" layoutX="143.0" layoutY="330.0" onMouseClicked="#btnTableOnAction" prefHeight="139.0" prefWidth="354.0">
+        <columns>
+          <TableColumn fx:id="colCarId" prefWidth="75.0" text="Car Id" />
+          <TableColumn fx:id="colYer" prefWidth="75.0" text="Year" />
+            <TableColumn fx:id="colNumber" prefWidth="101.0" text="Number" />
+            <TableColumn fx:id="colPricePerDay" prefWidth="101.0" sortType="DESCENDING" text="Price per Day" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Label layoutX="365.0" layoutY="41.0" prefHeight="17.0" prefWidth="119.0" text="Car Category Id">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneCarDetailsAll" layoutX="29.0" layoutY="120.0" prefHeight="200.0" prefWidth="689.0" style="-fx-background-color: #778beb;">
+         <children>
+            <Label layoutX="14.0" layoutY="53.0" prefHeight="17.0" prefWidth="112.0" text="Car CAtegory Name" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="106.0" text="Car Id" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="112.0" text="Car Brand" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="139.0" prefHeight="17.0" prefWidth="112.0" text="Car Model" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="169.0" prefHeight="17.0" prefWidth="106.0" text="Car Number" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="20.0" prefHeight="17.0" prefWidth="112.0" text="Car Category Id" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarCategoryId" layoutX="147.0" layoutY="20.0" prefHeight="17.0" prefWidth="127.0" textFill="#fcf9f9" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarCategoryName" layoutX="147.0" layoutY="53.0" prefHeight="17.0" prefWidth="127.0" textFill="#fffbfb" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarId" layoutX="147.0" layoutY="83.0" prefHeight="17.0" prefWidth="127.0" textFill="#fffbfb" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarBrand" layoutX="147.0" layoutY="111.0" prefHeight="17.0" prefWidth="127.0" textFill="#fffbfb" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarModel" layoutX="147.0" layoutY="139.0" prefHeight="17.0" prefWidth="127.0" textFill="#fffbfb" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarNumber" layoutX="147.0" layoutY="169.0" prefHeight="17.0" prefWidth="127.0" textFill="#fffbfb" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="20.0" prefHeight="17.0" prefWidth="112.0" text="Year" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="53.0" prefHeight="17.0" prefWidth="112.0" text="Price Per Day" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="83.0" prefHeight="17.0" prefWidth="149.0" text="Car Save Or Update User" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarYear" layoutX="523.0" layoutY="20.0" prefHeight="17.0" prefWidth="127.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrice" layoutX="523.0" layoutY="53.0" prefHeight="17.0" prefWidth="127.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserName" layoutX="523.0" layoutY="83.0" prefHeight="17.0" prefWidth="127.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="587.0" layoutY="178.0" onMouseClicked="#lblBackOnAction" prefHeight="17.0" prefWidth="73.0" text="Back..." textFill="#fffefe">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

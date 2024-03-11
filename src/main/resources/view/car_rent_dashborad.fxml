@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.rent.RentDashboardController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="730.0" style="-fx-background-color: #487eb0;" text="RENT-CAR" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="50.0" prefHeight="44.0" prefWidth="730.0" style="-fx-background-color: #34495e;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnRentCarOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #34495e;" text="Rent - Car" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-rental-100.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="524.0" mnemonicParsing="false" onAction="#btnCarRentDetailsOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #34495e;" text="      Car-Rent Details" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="533.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-rental-64.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="250.0" layoutY="3.0" mnemonicParsing="false" onAction="#btnCarReturnOnAction" prefHeight="39.0" prefWidth="226.0" style="-fx-background-color: #34495e;" text="  Car-Return Details" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="251.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="271.0" fitWidth="403.0" layoutX="327.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/be3dnfcjcc5bk2ci05aq5pdm6v.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchorPaneChange" layoutY="94.0" prefHeight="491.0" prefWidth="730.0" />
+   </children>
+</AnchorPane>

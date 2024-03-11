@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="672.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.MainFormController">
+   <children>
+      <AnchorPane fx:id="headerAnchorPane" prefHeight="78.0" prefWidth="815.0">
+         <children>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="17.0" prefHeight="61.0" prefWidth="730.0" style="-fx-background-color: #dfe6e9;" text="  CAR RENT COMPANY" textFill="#9801dd">
+               <font>
+                  <Font name="Century Schoolbook" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-car-90.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Pane layoutY="-1.0" prefHeight="24.0" prefWidth="962.0" style="-fx-background-color: #34495e;" />
+            <Label layoutX="-5.0" layoutY="23.0" prefHeight="53.0" prefWidth="237.0" style="-fx-background-color: #b2bec3ecf0f1;" text="                MENU">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-menu-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="108.0" layoutX="872.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-90.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" layoutX="646.0" layoutY="61.0" prefHeight="17.0" prefWidth="217.0" text="Your Ride, Your Way.">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="78.0" prefHeight="595.0" prefWidth="237.0" style="-fx-background-color: #34495e;">
+         <children>
+            <Button layoutX="11.0" layoutY="53.0" mnemonicParsing="false" onAction="#btnDashBoardOnAction" prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #34495e;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnCarCategoryOnAction" prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #34495e;" text="    Car Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="18.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="46.0" layoutX="18.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-structural-96.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnCarDetailsOnAction" prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #34495e;" text="Car Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="19.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-64.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="10.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #34495e;" text="Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="17.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-customer-100.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="385.0" mnemonicParsing="false" onAction="#btnRentOnAction" prefHeight="69.0" prefWidth="217.0" style="-fx-background-color: #34495e;" text="  Rent-Car" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="68.0" layoutX="10.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-rental-80.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUserName" layoutX="14.0" layoutY="489.0" prefHeight="24.0" prefWidth="195.0" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="44.0" layoutY="535.0" mnemonicParsing="false" onAction="#btnSignOutOnAction" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #34495e;" text="Sign Out" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="19.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-sign-out-50.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="12.0" layoutY="475.0" prefHeight="2.0" prefWidth="217.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Pane layoutX="234.0" layoutY="76.0" prefHeight="11.0" prefWidth="730.0" style="-fx-background-color: #34495e;" />
+      <AnchorPane fx:id="anchorpaneChanges" layoutX="234.0" layoutY="87.0" prefHeight="585.0" prefWidth="721.0" style="-fx-background-color: #000;" AnchorPane.rightAnchor="9.0">
+         <children>
+            <Label layoutX="388.0" layoutY="511.0" prefHeight="24.0" prefWidth="261.0" text=" CAR-RENT COMPANY">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="548.0" layoutY="541.0" prefHeight="17.0" prefWidth="141.0" text="You Ride, You Way.">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="405.0" fitWidth="605.0" layoutX="64.0" layoutY="69.0">
+               <image>
+                  <Image url="@../image/pngimg.com%20-%20volkswagen_PNG1820.png" />
+               </image>
+            </ImageView>
+
+         </children></AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

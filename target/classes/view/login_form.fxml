@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginMainAnchorPane" prefHeight="400.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="anchorPaneColurSide" layoutX="450.0" prefHeight="400.0" prefWidth="257.0" style="-fx-background-color: #34495e;" AnchorPane.leftAnchor="450.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-29.0" layoutY="26.0" prefHeight="39.0" prefWidth="257.0" text="Welcome To " textFill="#fff2f2">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="131.0" fitWidth="145.0" layoutX="34.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-car-80.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="54.0" prefHeight="39.0" prefWidth="196.0" text="HS CAR-RENT !" textFill="#fff2f2">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="61.0" layoutY="93.0" prefHeight="17.0" prefWidth="196.0" text="Your Ride, Your Way." textFill="#e1dfdf">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignUps" layoutX="76.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnSingUpChangeOnAction" prefHeight="39.0" prefWidth="121.0" style="-fx-background-color: #34495e;" text="SIGN UP" textFill="#e4e3e3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-sign-up-64(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSignIns" layoutX="68.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnSignInChangeOnAction" prefHeight="39.0" prefWidth="121.0" style="-fx-background-color: #34495e;" text="SIGN IN" textFill="#eee9e9">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-sign-in-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AnchorPaneEmpty" prefHeight="400.0" prefWidth="451.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="256.0">
+         <children>
+            <Label fx:id="labelSignIn" layoutX="128.0" layoutY="84.0" prefHeight="53.0" prefWidth="209.0" text="Sign in to HS CAR-RENT">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageSignIn" fitHeight="46.0" fitWidth="45.0" layoutX="83.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-login-64.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUserName" layoutX="76.0" layoutY="188.0" prefHeight="7.0" prefWidth="242.0" promptText="Username" AnchorPane.bottomAnchor="187.0" AnchorPane.topAnchor="188.0" />
+            <TextField fx:id="txtPassword" layoutX="76.0" layoutY="223.0" prefHeight="7.0" prefWidth="242.0" promptText="password" />
+            <TextField fx:id="txtName" layoutX="76.0" layoutY="117.0" prefHeight="7.0" prefWidth="242.0" promptText="name" />
+            <TextField fx:id="txtEmail" layoutX="76.0" layoutY="151.0" prefHeight="7.0" prefWidth="242.0" promptText="email" />
+            <TextField fx:id="txtUSerId" layoutX="76.0" layoutY="84.0" prefHeight="7.0" prefWidth="242.0" promptText="userId" />
+            <Button fx:id="btnSignIn" cache="true" layoutX="160.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnSignInOnAction" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #34495e;" text="SIGN IN" textFill="#f8f8f8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblCreateAcount" alignment="CENTER" layoutX="74.0" layoutY="30.0" prefHeight="25.0" prefWidth="304.0" text="Create Account">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-create-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="btnSignUp" cache="true" layoutX="166.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #34495e;" text="SIGN UP" textFill="#f8f8f8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="pfPassword" layoutX="74.0" layoutY="223.0" prefHeight="25.0" prefWidth="242.0" promptText="Password" />
+            <CheckBox fx:id="checkBoxShowPasswrd" layoutX="329.0" layoutY="227.0" mnemonicParsing="false" onAction="#cbShowPwOnAction" text="Show Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

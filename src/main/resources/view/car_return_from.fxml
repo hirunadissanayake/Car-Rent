@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.rent.CarReturnController">
+   <children>
+      <Label layoutY="1.0" prefHeight="24.0" prefWidth="203.0" text="Car Return Details" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPaneTbl" layoutX="27.0" layoutY="334.0" prefHeight="135.0" prefWidth="676.0">
+         <children>
+            <TableView fx:id="tblAllDetails" layoutX="23.0" layoutY="10.0" onMouseClicked="#tblGetIdOnAction" prefHeight="132.0" prefWidth="631.0">
+              <columns>
+                <TableColumn fx:id="colRentId" prefWidth="75.0" text="Rent Id" />
+                <TableColumn fx:id="colCusId" prefWidth="75.0" text="Customer Id" />
+                  <TableColumn fx:id="colCarId" prefWidth="75.0" text="Car Id" />
+                  <TableColumn fx:id="colVehicleNumber" prefWidth="101.0" text="Vehicle Number" />
+                  <TableColumn fx:id="colToretunDate" prefWidth="101.0" text="To retun Date" />
+                  <TableColumn fx:id="colReturnDate" prefWidth="101.0" text="Return Date" />
+                  <TableColumn fx:id="colUserName" prefWidth="101.0" text="User Name" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="31.0" layoutY="55.0" prefHeight="17.0" prefWidth="85.0" text="Rent Id" />
+      <Label layoutX="365.0" layoutY="55.0" prefHeight="17.0" prefWidth="85.0" text="Return Date" />
+      <TextField fx:id="txtRentId" layoutX="116.0" layoutY="51.0" promptText="Rent Id" />
+      <DatePicker fx:id="datePickerReturnDate" layoutX="488.0" layoutY="51.0" promptText="Enter Retun Date">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Button layoutX="644.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #222f3e;" text="ADD" textFill="#f8f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="anchorPaneTotal" layoutX="32.0" layoutY="133.0" prefHeight="201.0" prefWidth="666.0" style="-fx-background-color: #778beb;">
+         <children>
+            <Label fx:id="lblTotal" layoutX="8.0" layoutY="84.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" AnchorPane.bottomAnchor="90.0" />
+            <Label fx:id="lblBalance" layoutX="8.0" layoutY="151.0" prefHeight="17.0" prefWidth="545.0" textFill="#fcf9f9" AnchorPane.bottomAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAdvance" layoutX="8.0" layoutY="112.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" AnchorPane.bottomAnchor="60.0" />
+            <Label fx:id="lblCarDetails" layoutX="8.0" layoutY="23.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" />
+            <Label fx:id="lblCustomerDetails" layoutX="8.0" layoutY="6.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" />
+            <Label fx:id="lblRentPeriod" layoutX="8.0" layoutY="40.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" />
+            <Label fx:id="lblNote" layoutX="8.0" layoutY="178.0" prefHeight="19.0" prefWidth="545.0" textFill="#fcf9f9" underline="true" AnchorPane.bottomAnchor="4.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblExtraDate" layoutX="8.0" layoutY="67.0" prefHeight="17.0" prefWidth="545.0" textFill="#fffdfd" />
+            <Label layoutX="594.0" layoutY="179.0" onMouseClicked="#lblBackOnAction" prefHeight="17.0" prefWidth="55.0" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="565.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #222f3e;" text="Clear" textFill="#f8f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

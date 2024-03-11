@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carrent.layerd.controller.CarAddController">
+   <children>
+      <Label layoutY="2.0" prefHeight="24.0" prefWidth="203.0" text="Car add or Update" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCarCategory" layoutX="14.0" layoutY="40.0" onAction="#cmbCarCategoryOnAction" prefHeight="25.0" prefWidth="191.0" promptText="Select Car-Category" />
+      <TextField fx:id="txtCarCategoryId" editable="false" layoutX="309.0" layoutY="40.0" prefHeight="25.0" prefWidth="124.0" />
+      <Label layoutX="14.0" layoutY="103.0" prefHeight="17.0" prefWidth="54.0" text="Car Id" />
+      <Label layoutX="14.0" layoutY="142.0" prefHeight="17.0" prefWidth="54.0" text="Brand" AnchorPane.bottomAnchor="332.0" AnchorPane.topAnchor="142.0" />
+      <Label layoutX="14.0" layoutY="179.0" prefHeight="17.0" prefWidth="54.0" text="Model" />
+      <Label layoutX="300.0" layoutY="103.0" prefHeight="17.0" prefWidth="95.0" text="Number" />
+      <Label layoutX="14.0" layoutY="215.0" prefHeight="17.0" prefWidth="54.0" text="Year" />
+      <Label layoutX="300.0" layoutY="142.0" prefHeight="17.0" prefWidth="95.0" text="Price Per Day" />
+      <TextField fx:id="txtCarId" layoutX="75.0" layoutY="99.0" />
+      <TextField fx:id="txtBrand" layoutX="75.0" layoutY="138.0" prefHeight="3.0" prefWidth="149.0" />
+      <TextField fx:id="txtModel" layoutX="75.0" layoutY="175.0" />
+      <TextField fx:id="txtYer" layoutX="75.0" layoutY="211.0" />
+      <TextField fx:id="txtNumber" layoutX="411.0" layoutY="99.0" />
+      <TextField fx:id="txtPricePerDay" layoutX="411.0" layoutY="138.0" />
+      <Button layoutX="560.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #222f3e;" text="Add" textFill="#fff7f7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-add-48%20(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="433.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="32.0" prefWidth="93.0" style="-fx-background-color: #222f3e;" text="Update" textFill="#fff7f7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-update-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="301.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="32.0" prefWidth="93.0" style="-fx-background-color: #222f3e;" text="Delete" textFill="#fff7f7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-delete-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="615.0" layoutY="53.0" mnemonicParsing="false" onAction="#btnClearOnAction" style="-fx-background-color: #222f3e;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="anchorPaneTbl" layoutX="92.0" layoutY="277.0" prefHeight="200.0" prefWidth="594.0">
+         <children>
+            <TableView fx:id="tblCar" layoutX="14.0" onMouseClicked="#getValue" prefHeight="200.0" prefWidth="546.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Car Id" />
+                <TableColumn fx:id="colCarCategoryId" prefWidth="94.0" text="CarCategory Id" />
+                  <TableColumn fx:id="colBrand" prefWidth="94.0" text="Brand" />
+                  <TableColumn fx:id="colModel" prefWidth="94.0" text="Model" />
+                  <TableColumn fx:id="colNumber" prefWidth="94.0" text="Number" />
+                  <TableColumn fx:id="colPriceperDay" prefWidth="94.0" text="Price per Day" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblShowDetails" layoutX="27.0" layoutY="252.0" onMouseClicked="#showAllDetailsOnAction" prefHeight="17.0" prefWidth="149.0" text="Show All Details" textFill="#0b07e4">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblBack" layoutX="27.0" layoutY="253.0" onMouseClicked="#backOnAction" prefHeight="17.0" prefWidth="93.0" text="Backl" textFill="#0b07e4">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
